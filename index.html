@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rayani amorim studio</title>
+    <title>Rayani Amorim Studio</title>
     <script type="module" crossorigin src="/LinkTree-rayaniamorimstudio/assets/index.js"></script>
     <link rel="stylesheet" crossorigin href="/LinkTree-rayaniamorimstudio/assets/index.css">
   </head>
   <body>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-WZ78WL7XGH"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZ78WL7XGH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){dataLayer.push(arguments);}
       gtag("js", new Date());
-
-      gtag("config", "G-WZ78WL7XGH");
+      gtag("config", "G-WZ78WL7XGH", {
+        send_page_view: false
+      });
     </script>
+
     <div id="root"></div>
-    <!-- O Vite vai injetar os arquivos corretos no build -->
+    <!-- Vite injeta o bundle correto no build -->
   </body>
 </html>
